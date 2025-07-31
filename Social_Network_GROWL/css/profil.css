@@ -1,0 +1,236 @@
+@import url("./style.css");
+@import url("./post.css");
+
+/* main{
+ height:90%;
+} */
+
+.central{
+    width:60%;
+    height:850PX;
+}
+
+.post-profil::-webkit-scrollbar{
+    width:0;
+}
+
+.top-profil{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    height:230px;
+    display:flex;
+}
+
+.pic-profil{
+    width:250px;
+    height:250px;
+}
+
+
+.pic-profil img{
+    border:solid 3px var(--bg-main-color);
+}
+
+.number-profil{
+    height:100%;
+    width:40%;
+}
+
+.case-number{
+    margin-right:20%;
+    text-align:center;
+    font-size:18px;
+}
+
+.case-number p {
+    margin-top:10%;
+}
+
+.statistique-profil{
+    display:flex;
+    width:100%;
+    margin-top:8%;
+    margin-left:5%;
+}
+
+#profil-pic {
+    height:45px;
+    width:45px;
+}
+
+#pic {
+    width:70%;
+    height:70%;
+    border-radius:50%;
+    margin:20px;
+}
+
+.bottom-profil {
+    width:100%;
+    height:70%;
+}
+
+
+.username-profil {
+    display:flex;
+    align-items:flex-end;
+    justify-content: space-evenly;
+    width:130%;
+    height:100px;
+    padding-left:10%;
+    font-size:25px;
+}
+
+.username-profil ion-icon{
+    margin-left:10px;
+}
+
+
+.button_profil{
+    width:150px;
+    height:35px;
+    font-size: 17px;
+    cursor: pointer;
+    border: 0px;
+    background: transparent;
+    position: relative;
+    transition: all .2s;
+    overflow: hidden;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, .5), 0px 0px 0px 0px rgba(56, 113, 235, 0.5);
+}
+
+.button_profil::after{
+    content: '';
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    background-image: linear-gradient(225deg, #144b70 0%, #0f2ebb 50%, #c625d0 100%);
+    z-index: -1;
+    transition: all .5s;
+}
+
+.button_profil:hover::after {
+    transform: rotate(150deg);
+}
+  
+.button_profil:hover {
+    transform: translate(0,-3px);
+    box-shadow: 10px -10px 25px 0px rgba(143, 64, 248, .25), -10px 10px 25px 0px rgba(8, 77, 100, 0.25);
+}
+
+  .post-profil{
+    height: 95%;
+    width:90%;
+    overflow-y:scroll;
+    margin-left:2%;
+    padding:5px;
+    padding-right:20px;
+    padding-bottom:30px;
+    margin-top:5px;
+}
+
+hr {
+    color:white;
+    width:100%;
+ }
+
+.container-btn-post{
+    display:flex;
+    justify-content: space-between;
+
+
+}
+
+.container-btn-post btn {
+    width: 30%;
+    height: 30px;
+    border: 1px solid var(--bg-main-color);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+
+  .container-btn-post btn:hover {
+    background-color: #b7b6b6;
+    color:var(--bg-main-color);
+    transition: all 0.3s ease;
+  }
+
+  .btn-active-profil {
+    background-color: #b7b6b6;
+    color:var(--bg-main-color);
+    transition: all 0.3s ease;
+  }
+
+  .btn-unactive-profil {
+    background-color: var(--bg-main-color);
+    color:white;
+    transition: all 0.3s ease;
+  }
+
+  .container-btn-post btn:focus {
+    outline: none;
+  }
+
+
+.content-posts{
+    width:100%;
+    height:80%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.post-container{
+    width: 92%;
+    height: 100%;
+}
+
+.content1{
+    height:120px;
+    width:fit-content;
+}
+
+.content-posts::-webkit-scrollbar {
+    width: 10px;
+    margin-right:20px;
+  }
+
+  .content-posts::-webkit-scrollbar-thumb {
+    background-color:var(--bg-main-color);
+    border-radius: 3px;
+    margin-left: 10px;
+  }
+
+  .content-posts::-webkit-scrollbar-track {
+    background-color: #f2f2f2;
+    border-radius: 3px;
+    margin-top:20px;
+  }
+
+  .submit-post {
+    background-color:var(--bg-main-color); /* couleur de fond bleue */
+    color: #fff; /* couleur du texte en blanc */
+    padding: 6px 12px; /* ajout de marge intérieure */
+    border: none; /* suppression de la bordure */
+    border-radius: 8px; /* ajout d'arrondis aux coins */
+    font-size: 13px; /* taille de police */
+    font-weight: bold; /* épaisseur de police en gras */
+    text-transform: uppercase; /* texte en majuscules */
+    cursor: pointer; /* ajout d'un curseur au survol */
+    z-index: 5;
+}
+
+ 
+ 

@@ -1,0 +1,286 @@
+@import url("./style.css");
+*{
+    margin:0;
+    padding:0;
+}
+
+header {
+    width:100%;
+    height:50px;
+    position:fixed;
+    top:0;
+    z-index:10000;
+}
+
+nav {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-main-color);
+    transition: background 0.3s ease;
+    width:100%;
+    height:100%;
+}
+
+.left{
+    width:30%;
+    padding-left:3%;
+    padding-top:5px;
+}
+
+.right{
+    display:flex;
+    /*flex-direction:column;*/
+    justify-content:space-between;
+    width:70%;
+    padding-right:3%;
+}
+
+.logo {
+    width:160px;
+}
+
+nav .left, nav .right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-user img {
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    cursor:pointer;
+    z-index:5;
+}
+
+.search-bar {
+    background-color: #efefefef;
+    width:350px;
+    height:25px;
+    border-radius:20px;
+    display:flex;
+    align-items:center;
+    padding: 0 15px;
+}
+
+.search-bar img{
+    width:18px;
+}
+
+.search-bar input {
+    width:100%;
+    background-color: transparent;
+    border:none;
+    padding:10px;
+    outline: none;
+}
+
+.online {
+    position:relative;
+}
+
+.online::after {
+    content:'';
+    width:9px;
+    height: 9px;
+    border:1px solid #fff;
+    border-radius: 50%;
+    background-color: #41db52;
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+
+/* Setting-Menu Style */
+
+.circle {
+    background-color: #dadada;
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    z-index:1;
+}
+
+.circle ion-icon {
+    width:25px;
+    height:25px;
+    padding: 4.5px 0 0 5.5px;
+}
+
+#dark-mode-btn {
+    position:absolute;
+    right:20px;
+    background-color: #b9b8b8;
+    width:45px;
+    height:25px;
+    border-radius:15px;
+    padding:3px 3px;
+    cursor:pointer;
+    transition: padding-left 0.5s , background-color 0.5s;
+}
+
+#dark-mode-btn span {
+   width:18px;
+   height:18px;
+   background-color: rgb(255, 255, 255);
+   border-radius:50%;
+   display:inline-block;
+}
+
+#dark-mode-btn.dark-mode-on{
+    padding-left:23px;
+    background-color: #000;
+}
+
+.settings-items {
+    padding: 0 0 0 5px;
+    display:flex;
+    flex-direction:row;
+    height:42px;
+    margin: 0 0 0 10px;
+}
+
+.settings-items-description {
+    padding: 5px 0 0 15px;
+}
+
+.setting-menu-top {
+    width:94%;
+    border-radius:10px;
+    margin:5px 0 5px 5px ;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.user-profil-setting-menu{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin:2%;  
+  }
+  
+
+  .setting-menu-profil-top img {
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    margin-right:10px;
+}
+
+.setting-menu-profil-top {
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    padding:8px;
+    height:55px;
+}
+
+
+.your-profil {
+    padding-left:20px;
+    width:100%;
+}
+
+
+.setting-menu {
+    position:absolute;
+    width:400px;
+    margin:0.5% 0 0 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4) ;
+    border-radius:10px;
+    overflow:hidden;
+    top:100%;
+    right:3%;
+    max-height:0;
+    transition: 0.5s ease;
+}
+
+.setting-menu-height {
+    max-height:450px;
+}
+
+.setting-menu a {
+    text-decoration:none;
+    font-size:12px;
+}
+
+.setting-menu hr {
+    border:0;
+    height:1px;
+    background-color: #9a9a9a;
+    margin:15px 0;
+
+}
+
+.setting-menu .user-profil{
+  margin:2%;
+}
+
+
+/* Others */
+
+a {
+    display:flex;
+    flex-direction: row;
+    text-decoration : none;
+    cursor:pointer;
+    color:black;
+}
+
+a p {
+    font-size:16px;
+}
+
+a:hover{
+    color:var(--bg-main-color);
+}
+
+
+.settings-items:hover {
+    color:var(--bg-main-color);
+}
+
+.suggestion{
+    position:absolute;
+    background-color:rgba(231, 230, 230, 0.6);
+    width:30%;
+    height:fit-content;
+    display:none;
+    margin-top:10px;
+    border-radius:10px;
+    margin-left:-4%;
+}
+
+.suggestion img {
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+}
+
+.search-bar {
+    position: relative;
+
+}
+
+.search-bar ion-icon{
+    font-size:25px;
+}
+
+.divSuggestion {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(185, 185, 185);;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    border-radius:15px;
+    margin:10px;
+}
+
+
+  /* Style du texte */
+  .suggestion p {
+    font-size: 16px;
+    color: #333;
+  }

@@ -1,0 +1,12 @@
+{
+    "name": "librairie/website",
+    "description": "Site de vente de livre",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adamou02",
+            "email": "bouhrara.adam@gmail.com"
+        }
+    ]
+}

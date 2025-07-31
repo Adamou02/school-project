@@ -1,0 +1,77 @@
+
+/* Right-Content Style */
+.right-content {
+    flex-basis:35%;
+    display:flex;
+    justify-content: flex-end;
+    /* z-index:-10; */
+}
+
+.close-f {
+    display:flex;
+    align-items:center;
+    background-color: white;
+    margin:5px;
+    padding:5px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: space-between;
+    border:none;
+    cursor:pointer;
+}
+
+.close-f:hover {
+    background-color:var(--bg-body-color);
+}
+
+.close-f p{
+    margin-bottom:-5px;
+    font-weight: 500px;
+}
+
+.close-f ion-icon {
+    width:25px;
+    height:25px;
+    margin-right:20px;
+}
+
+.close-f ion-icon:hover {
+    color:white;
+}
+
+.friend-profil-link{
+    display:flex;
+}
+
+.friend-profil-link img{
+    margin-left:5px;
+}
+
+#pseudo-close-f-display{
+    margin-top:10px;
+}
+
+.close-f img {
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    margin-right:10px;
+}
+
+.close-friends  {
+    text-align: center;
+    position:fixed;
+    width:21%;
+    transition: 0.3s ease;
+    transition-delay: 0s;
+}
+
+.close-friends b {
+    font-size:25px;
+    color:rgb(63, 62, 62);
+}
+
+.close-message {
+    position:relative;
+    float:right;
+}

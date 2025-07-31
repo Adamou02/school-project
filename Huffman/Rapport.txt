@@ -1,0 +1,10 @@
+Pour les petits fichiers, l'entete du fichiers compresses fait que celui ci prends plus de place que le fichier
+d'origine.
+
+On laisse dans l'entete le code binaire sours format decimale. Dans le fichier compressé, on aura des nombres binaires. Lors de la decompression,
+on transformera ses nombres binaires en nombres decimales qui aura un equivalent dans le tableau de l'entete.
+
+Le nb_bits qu'on donne a un caractere est son hauteur dans l'arbre, ca va nous donné son nombre de bits. Par exemple, si nb_bits = 5 alors le 
+code binaire est composé de 5 éléments (ca peut etre 10000; 10001; 10010; 10011...). En bref, le nombre de bits nous donne une information cruciale
+pour ranger le code binaire d'un caractere dans un octet. On peut apres gere le nombre de bits dans notre tampon et ecrire l'octet quand celui-ci
+depasse nb_bits=8

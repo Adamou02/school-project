@@ -1,0 +1,30 @@
+GROWL website
+ACCOUNT:
+
+- Admin User :
+U1
+PtdrYoda@gmail.com
+TU_ETAIS_LELU_CETAIT_TOI
+
+- Premium User :
+U2
+jesuisvert@gmail.com
+LaForceCcool
+
+- Standart User :
+
+U3
+inspecteur.gadget@gmail.com
+GogoGadgeto
+
+U4
+Marty@hotmail.com
+Olalalala_123
+
+U5
+Doc@hotmail.com
+Nom_2_ZEUS
+
+U6
+Palpa@free.fr
+Mechant_123

@@ -1,0 +1,19 @@
+#Dossiers
+.angular/
+node_modules/
+package/
+dist/
+
+#Fichiers
+.angular-cli.json
+*.log
+*.iml
+
+#Dossiers spécifiques à Visual Studio Code
+.vscode/
+
+#Fichiers spécifiques à macOS
+.DS_Store
+
+#Fichiers de configuration spécifiques à chaque utilisateur
+.editorconfig

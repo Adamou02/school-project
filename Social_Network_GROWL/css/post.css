@@ -1,0 +1,256 @@
+/*Post*/
+.user-profil{
+    display:flex;
+    align-items:center;  
+  }
+  
+.user-profil img {
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    margin-right:10px;
+}
+
+
+.user-profil small, .user-profil span {
+    font-size: 12px;
+}
+
+.post-images{
+    flex-basis: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.post-images img {
+    max-width: 500PX;
+    max-height: auto;
+}
+
+
+.post-container {
+    width:100%;
+    background-color: var(--bg-post-color);
+    border-radius: 6px;
+    padding:20px;
+    color: #626262;
+    margin: 20px 0;
+}
+
+.post-text {
+    text-align: left;
+    color: #414141;
+    margin:15px 0;
+    font-size: 15px;    
+}
+
+.post-container a {
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.post-media {
+    width:100%;
+    display: flex;
+    flex-direction:row;
+    justify-content: center ; 
+}
+
+.post-img {
+    width:85%;
+    border-radius:6px;
+    margin-bottom: 5px;
+}
+
+.post-reactions {
+    width:20%;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-evenly;
+    flex-basis: 20%;
+}
+
+.post-reactions ion-icon:hover {
+    color:var(--bg-main-color);
+}
+
+.post-reactions div ion-icon{
+    margin-right:10px;
+    font-size:25px;
+}
+
+.post-reactions small {
+    top:0;
+    margin-right:10px;
+    font-size:20px;
+}
+
+.comment-menu{
+    position:absolute;
+    z-index: 1;
+    width:25%;
+    margin:0 -35% 0 5%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4) ;
+    border-radius:8px;
+    overflow:hidden;
+    max-height:0;
+    transition: 0.4s ease;
+}
+
+.comment-menu-height {
+    max-height:450px;
+    height: fit-content; /*On met le carré à 100% de la hauteur limit, soit 450px*/
+    transition: 0.4s ease;
+    overflow-y: scroll;
+}
+
+.comment-menu-height::-webkit-scrollbar,
+.comment-menu-height::-webkit-scrollbar-thumb {
+  width: 26px;
+  border-radius: 13px;
+  background-clip: padding-box;
+  border: 10px solid transparent;
+  color: var(--bg-main-color);
+}
+
+.comment-menu-height::-webkit-scrollbar-thumb {        
+  box-shadow: inset 0 0 0 10px;
+}
+
+.comments-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-box{
+    margin: 10px 10px 10px 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    border-radius:10px;
+    padding-left: 5px;
+}
+
+.comment-pseudo-text{
+    margin-top: 10px;
+    margin-right: 20px;
+    background-color: rgba(109, 107, 107, 0.151);
+    border-radius:10px;
+    padding-left: 5px;
+}
+
+.comment-text{
+    margin-bottom: 0px;
+    word-break: break-word;
+}
+
+.comment-reaction{
+    display: flex;
+}
+
+.comment-info{
+    font-size: x-small;
+    margin-bottom: 0px;
+    margin-right: 5px;
+}
+
+.comment-react{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.comment-react:hover{
+    color: var(--bg-main-color);
+}
+
+.comment-number-like{
+    padding-left: 0%;
+}
+
+.answers_div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: solid 1px black;
+}
+
+.send_menu_comment{
+    margin: 0 10px 10px 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.send_menu_answer{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.comment-input{
+    margin: 10px;
+    border-radius: 20px;
+    max-width: 95%;
+    background-color: var(--bg-post-color);
+    overflow-y: scroll;
+    border: var(--bg-body-color) solid 1px;
+}
+
+.load-comments{
+    display: flex;
+    align-items: stretch;
+}
+
+.comments-bar{
+    border: 1px solid grey;
+    min-height: 100%;
+    margin-left: 10px;
+    margin-right: 22px;
+}
+
+.show-more-comments{
+    cursor: pointer;
+}
+
+.show-more-comments:hover{
+    color: var(--bg-main-color);
+}
+
+.load-more-btn {
+    display:block;
+    margin:auto;
+    cursor:pointer;
+    padding:5px 10px;
+    border:1px solid #9a9a9a;
+    color: #313131;
+    background-color: transparent;
+    border-radius:5px;
+    font-size:15px;
+
+}
+
+.just-created-post {
+    border: solid 1px blue;
+}
+
+.btn-loadMore {
+    min-width: fit-content;
+    color:white;
+    width:10%;
+    margin-left:45%;
+    border-radius: 15px;
+    padding:5px;
+    border:none;
+    background-color: var(--bg-main-color);
+}
+
+.btn-loadMore:hover {
+    color:var(--bg-main-color);
+    background-color: #9a9a9a;
+    transition: ease 0.3s;
+}

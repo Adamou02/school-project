@@ -1,0 +1,58 @@
+name: Build with Makefile
+
+on:
+  push:
+    branches: [ "dev" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        build_type: [Release]
+        c_compiler: [gcc, clang, cl]
+        include:
+          - os: windows-latest
+            c_compiler: cl
+          - os: ubuntu-latest
+            c_compiler: gcc
+          - os: ubuntu-latest
+            c_compiler: clang
+        exclude:
+          - os: windows-latest
+            c_compiler: gcc
+          - os: windows-latest
+            c_compiler: clang
+          - os: ubuntu-latest
+            c_compiler: cl
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set reusable strings
+      id: strings
+      shell: bash
+      run: |
+        echo "build-output-dir=${{ github.workspace }}/build" >> "$GITHUB_OUTPUT"
+
+    - name: Install Gnuplot Linux
+      if: matrix.os == 'ubuntu-latest'
+      run: sudo apt-get install gnuplot -y
+
+    - name: Install Gnuplot Windows
+      if: matrix.os == 'windows-latest'
+      run: choco install gnuplot -y
+
+    - name: Build with Makefile
+      if: matrix.os == 'ubuntu-latest' #Pour le moment ne fonctionne que sur Windows
+      run: make -C ${{ github.workspace }}/src -j4
+
+    - name: Test
+      if: matrix.os == 'ubuntu-latest' #Pour le moment ne fonctionne que sur Windows
+      working-directory: ${{ github.workspace }}/src
+      run: make test

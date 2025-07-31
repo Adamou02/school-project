@@ -1,0 +1,17 @@
+                                        CENTRE D AIDE : 
+
+
+
+POUR COMPRESSER :           ./Projet -c [FICHIER_SOURCE] [FICHIER_A_CREER]               
+
+
+POUR DECOMPRESSER :         ./Projet -d [FICHIER_SOURCE] [FICHIER_A_CREER]   
+
+
+ATTENTION : Ce programme ne fonctionne que sur un compilateur sous Unbuntu.
+Les OS comme Windows ou macOS ne prennet pas en charge certaines lignes de
+commande présente dans le programme.
+PS : Le README sur github n'a pas un bon format car il a été fait pour bien
+aller avec le terminal de VScode, application sur laquelle le prof va nous
+corriger.
+

@@ -1,0 +1,51 @@
+#Dossiers
+.gradle/
+bin/
+build/
+out/
+libs/
+gradle/
+javadoc/
+buildSrc/
+.metadata/
+.settings/
+
+#Fichiers
+.classpath
+.project
+gradlew
+gradlew.bat
+*.iml
+*.ipr
+*.iws
+*.log
+
+#Fichiers specifiques a IntelliJ IDEA
+.idea/
+
+#Fichiers specifiques a Visual Studio Code
+.vscode/
+
+#Fichiers de sauvegarde
+*~
+
+#Fichiers de configuration de l'environnement
+.env
+
+#Fichiers specifiques a Windows
+Thumbs.db
+ehthumbs.db
+
+#Fichiers specifiques a macOS
+.DS_Store
+
+#Fichiers de configuration specifiques a chaque utilisateur
+!gradle-wrapper.jar
+
+#Fichiers de documentation generes
+/build/
+/docs/
+
+#Dossiers de logs
+/log/
+/logs/

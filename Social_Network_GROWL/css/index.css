@@ -1,0 +1,113 @@
+@import url("./style.css");
+@import url("./post.css");
+
+/*Send/Write post area style*/
+.write-post {
+    width:100%;
+    background-color: var(--bg-post-color);
+    border-radius:7px;
+    padding:20px;
+    color:#626262;
+}
+
+.post-input {
+    padding-left:55px;
+    padding-top:20px;
+}
+
+.post-input ion-icon:hover {
+    color:var(--bg-main-color);
+    cursor:pointer;
+}
+
+.post-input ion-icon {
+    padding-right:5px;
+}
+
+
+.post-input-images {
+    position: relative;
+    display: inline-block;
+}
+  
+.add-post button {
+    position: absolute;
+    margin-left:-2%;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#new-post-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+
+#new-post-images img {
+   max-width: 250px;
+   height: auto;
+} 
+
+
+.submit-post {
+    background-color:var(--bg-main-color); /* couleur de fond bleue */
+    color: #fff; /* couleur du texte en blanc */
+    padding: 6px 12px; /* ajout de marge intérieure */
+    border: none; /* suppression de la bordure */
+    border-radius: 8px; /* ajout d'arrondis aux coins */
+    font-size: 13px; /* taille de police */
+    font-weight: bold; /* épaisseur de police en gras */
+    text-transform: uppercase; /* texte en majuscules */
+    cursor: pointer; /* ajout d'un curseur au survol */
+    z-index: 5;
+}
+
+.bottom-input{
+    display: flex;
+    justify-content:space-between;
+    margin-top:15px;
+}
+  
+
+.text-area {
+    width: 100%;
+    border:0;
+    outline:0;
+    border-bottom:1px solid #ccc;
+    background:transparent;
+    resize:none;
+}
+
+.add-post{
+    display:flex;
+    margin-top:10px;
+
+}
+
+.add-post a{
+   text-decoration:none;
+   display:flex;
+   align-items:center;
+   color: #626262;
+   margin-right:13px;
+   font-size:13px;
+}
+
+.add-post a img {
+    width:20px;
+    margin-right:10px ;
+}
+
+
+
+
+

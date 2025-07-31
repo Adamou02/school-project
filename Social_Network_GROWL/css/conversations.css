@@ -1,0 +1,235 @@
+@import url("./style.css");
+
+body {
+    overflow-y:hidden;
+    overflow-x:hidden;
+    width:100%;
+    height:100%;
+    background-color: var(--bg-body-color);
+}
+
+
+main{
+    width:100%;
+    height: 92%;
+    padding-left:5%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.conv_message::-webkit-scrollbar,
+.conv_message::-webkit-scrollbar-thumb {
+  width: 26px;
+  border-radius: 13px;
+  background-clip: padding-box;
+  border: 10px solid transparent;
+  color: var(--bg-main-color);
+}
+
+.conv_message::-webkit-scrollbar-thumb {        
+  box-shadow: inset 0 0 0 10px;
+}
+
+/* middle style */
+
+.middle-message{
+    padding-top:10px;
+    flex-basis: 60%;
+}
+
+.box_message{
+    min-height: 100%;
+    max-height: 100%;
+    background-color: var(--bg-post-color);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title_message{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px 0 15px;
+    border-bottom: var(--bg-body-color) solid 1px;
+    z-index: 1;
+    background-color: var(--bg-conv-other-color);
+}
+
+.conv_message{
+    background-color: var(--bg-conv-color);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-y: auto;
+    padding-top: 10px;
+}
+
+.bulle{
+    max-width: 80%;
+    width: fit-content;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    word-break: break-word;
+}
+
+.friend_bulle_message{
+    background-color: var(--bg-post-color);
+    margin-left: 20px;
+}
+
+.my_bulle_message{
+    position:relative;
+    float:right;
+    background: var(--bg-main-color);
+    margin-right: 20px;
+    color: var(--bg-post-color);
+}
+
+#new-post-images{
+    background: transparent;
+    width: auto;
+    height: auto;
+    border-radius:10px;
+    padding:5px;
+}
+
+#new-post-images button {
+    position: absolute;
+    margin-left:2%;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#new-post-images img{
+    border-radius:10px;
+    position:relative;
+    float:right;
+    margin-right:0;
+}
+.my-empty-conv{
+    width: 100%;
+}
+
+.message_info{
+    font-size: small;
+    color: grey;
+}
+
+.date_message{
+    font-size: small;
+    color: grey;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.send_menu_message{
+    border-top: 1px solid var(--bg-body-color);
+    height: 100px;
+    background-color: var(--bg-conv-other-color);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.message_image_file {
+    padding-left:20px;
+    padding-right: 10px;
+    size: 100px;
+}
+
+.message_image_file ion-icon:hover {
+    color:var(--bg-main-color);
+    cursor:pointer;
+}
+
+input:focus {
+    outline: none;
+    border: var(--bg-main-color) 1px solid !important;
+    box-shadow: none !important;
+}
+
+.form-control {
+    margin: 10px;
+    border-radius: 20px;
+    width: 85%;
+    background-color: var(--bg-post-color);
+    overflow-y: scroll;
+    border : var(--bg-body-color) solid 1px;
+}
+
+.send_icon_message {
+    size: 100px;
+}
+
+.send_icon_message ion-icon:hover {
+    color: var(--bg-main-color);
+    cursor: pointer;
+}
+
+/* right style */
+
+.right-content-message{
+    flex-basis: 25%;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.selected_friends{
+    background-color: rgba(214, 211, 211, 0.549) !important;
+}
+
+.friends_list{
+    display:flex;
+    align-items:center;
+    background-color: white;
+    margin:5px;
+    padding:5px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: flex-start;
+    gap:20px;
+    cursor: pointer;
+}
+
+.friends_list p{
+    margin-bottom:-5px;
+    font-weight: 500px;
+}
+
+.friends_list img {
+    width:45px;
+    border-radius:50%;
+    margin-right:10px;
+}
+
+.friends_list:hover{
+    cursor: pointer;
+}
+
+#image_message{
+    max-width: 250px;
+    max-height: 250px;
+}
+
+
+.post-input-images{
+    max-width: 250px;
+    max-height: 250px;
+}
+

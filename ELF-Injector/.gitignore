@@ -1,0 +1,16 @@
+# Ignore object files and linked executables
+*.o
+injector
+legit
+
+# Ignore debugging files
+.gdb_history
+
+# Ignore backup files
+*~
+
+# Ignore NASM listing files
+*.lst
+
+# Ignore core dumps
+core

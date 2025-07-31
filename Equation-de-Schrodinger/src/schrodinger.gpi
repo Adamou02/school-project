@@ -1,0 +1,13 @@
+reset
+
+set terminal png
+  set output 'schrodinger.png'
+  set datafile missing 'NaN'
+  set title "Équation de SCHRÖDINGER"
+  set xlabel "x (10^{-9} m)"
+  set ylabel "{/Symbol f}(x)" enhanced
+  set key off
+  set multiplot
+  plot 'schrodinger.dat' using 1:2
+  plot 'schrodinger.dat' using 1:2 with lines
+  unset multiplot

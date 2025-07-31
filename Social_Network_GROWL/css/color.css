@@ -1,0 +1,29 @@
+:root{
+    --bg-main-color :rgb(16, 16, 110);
+    --bg-body-color : rgb(10,10,66, 0.25);
+    --bg-post-color : #fff;
+    --bg-conv-color : rgba(214, 211, 211, 0.549);
+    --bg-conv-color2 : rgba(214, 211, 211, 0.1);
+    --bg-conv-other-color : rgba(214, 211, 211, 0.242);
+    --bg-settings-color : #fff;
+    --settings-content-color : #000;
+    --settings-delete-bg-color : rgb(232, 0, 0);;
+    --settings-delete-color : #000;
+    --settings-hover-bg-color : rgb(120, 0, 0);;
+    --settings-hover-color : #fff;
+}
+
+.dark-theme {
+    --bg-main-color: rgb(26, 26, 26);
+    --bg-body-color : rgb(112, 112, 112);
+    --bg-post-color : rgb(218, 218, 218);
+    --bg-conv-color : rgba(105, 104, 104, 0.549);
+    --bg-conv-color2 : rgba(105, 104, 104, 0.1);
+    --bg-conv-other-color : rgba(105, 104, 104, 0.242);
+    --bg-settings-color : rgb(42, 42, 42);
+    --settings-content-color : #fff;
+    --settings-delete-bg-color : rgb(120, 0, 0);;
+    --settings-delete-color : #fff;
+    --settings-hover-bg-color : rgb(232, 0, 0);;
+    --settings-hover-color : #000;
+}

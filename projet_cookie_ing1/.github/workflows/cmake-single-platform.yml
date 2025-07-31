@@ -1,0 +1,20 @@
+name: Makefile on a single platform
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Build
+      run: make -C ${{github.workspace}} $BUILD_TYPE
+
+    - name: Test
+      run: make -C ${{github.workspace}} test
